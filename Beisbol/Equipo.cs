@@ -16,24 +16,28 @@ namespace Beisbol
         {
             NombreE = "sin nombre";
             Ciudad = "no registrada";
-            Ciudad = "no registrada";
             Entrenador = "no registrada";
+            Jugadores = new List<Jugador>();
+
 
         }
         public Equipo(string nombreE)
         {
             NombreE = nombreE;
+            Ciudad = "no registrada";
+            Entrenador = "no registrada";
             Jugadores = new List<Jugador>();
+
         }
 
         public Equipo (string nombreE, string ciudad, string entrenador, string jugadores)
         {
-
+            NombreE = nombreE;
+            Ciudad = "No asignado";
+            Entrenador = "No asignado";
+            Jugadores = new List<Jugador>();
         }
 
-        public static implicit operator List<object>(Equipo v)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

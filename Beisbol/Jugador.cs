@@ -12,15 +12,14 @@ namespace Beisbol
         public Jugador() {
 
             Nombre = "no registrada";
-            Numero = "no registrada";
+            Numero = "no asignado";
 
         }
 
-        public Jugador (string numero)
+        public Jugador (string nombre, string numero)
         {
             Nombre = nombre;
             Numero = numero;
-
         }
     }
 }
